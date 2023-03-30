@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DAPP</title>
+	<style>
+		     
+		body{
+			background: #1E1E1E;
+		}
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 250px;
+			background-color: #595c5a;
+			position: fixed;
+			height: 100%;
+			overflow: auto;
+		}
+		#core{
+			position: absolute;
+		
+			left: 44px;
+			top: 5px;
+			 
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 22px;
+			line-height: 33px;
+			color: #989898;
+
+		}
+ 
+		nav li a {
+			display: block;
+			color:#B4B4B4;
+			padding: 35px 32px;
+			text-decoration: none;
+			font-family: sans-serif;
+		}
+
+		 
+		nav li a:hover {
+			background-color: #54e228;
+			color: rgb(255, 255, 255);
+		}
+		#txt{
+			width: 250px;
+			padding: 10px 4px;
+			margin-left: 200px;
+			margin-top: 100px;
+			font-size: 14px;
+			color: #333;
+			outline: none;
+			letter-spacing: 1px;
+			border: 1px solid #ccc;
+			position: relative;
+			background: transparent;
+		}
+		#txt:hover{
+			border-color: rgb(30, 240, 40);
+			transition: 0.3s;
+			width: 50%;
+			height: 100%;
+			bottom: 0;
+			right: 0;
+			
+		}
+	    #btn1{
+			position: absolute;
+			width: 200px;
+			height: 40px;
+			left: 750px;
+			top: 70px;
+			background: #71fd3a;
+			border-radius: 10px;
+			cursor: pointer;
+			border-style: none;
+			font-size: large;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		}
+		#btn2{
+			position: absolute;
+			width: 200px;
+			height: 40px;
+			left: 990px;
+			top: 70px;
+			background: #71fd3a;
+			border-radius: 10px;
+			cursor: pointer;
+			border-style: none;
+			font-size: large;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		}
+		#rect{
+			position: absolute;
+			width: 950px;
+			height: 350px;
+			left: 300px;
+			top: 300px;
+			border: 1px solid #39f30b;
+			border-radius: 10px;
+			transform: matrix(1, 0, 0, -1, 0, 0);
+		}
+		#tk1{
+			margin-top: 120px;
+			margin-left: 170px;
+			padding-top: 10px;
+			color:#71C7EC;
+			font-family: sans-serif;
+			font-size: 25px;
+		}
+		#tk2{
+			position: absolute;
+			width: 224px;
+			height: 65px;
+			left: 620px;
+			top: 306px;
+			padding-top: 20px;
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			color: #71C7EC;
+			font-family: sans-serif;
+			font-size: 25px;
+		}
+		#tk3{
+			position: absolute;
+			color: #71C7EC;
+			left: 620px;
+			top: 505px;
+			padding-bottom: 25px;
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px; 
+			font-family: sans-serif;
+			font-size: 25px;
+		}
+		#tk4{
+			position: absolute;
+			width: 166px;
+			height: 65px;
+			left: 950px;
+			top: 325px;
+			color: #71C7EC;
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			font-family: sans-serif;
+			font-size: 25px;
+		}
+		#tk5{
+			position: absolute;
+			left: 938px;
+			top: 505px;
+			color: #71C7EC;
+			font-family: 'Poppins';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			font-family: sans-serif;
+			font-size: 25px;
+		}
+		#candidateName{
+			margin-left: 290px;
+			padding: 150px;
+			margin-top: 5px;
+		}
+		 
+		 
+
+	</style>
+</head>
+<body>
+	
+	<nav>
+		<ul>
+			 
+			<li><a href="#dashboard">Dashboard</a></li>
+			<li><a href="#cal">Calculator</a></li>
+			<li><a href="#swap">Swap</a></li>
+			<li><a href="#todo">To Do List</a></li>
+			<li><a href="#faq">FAQ</a></li>
+			<li><a href="#dashboard">Social</a></li>
+			<li><a href="#cal">Website</a></li>
+			<li><a href="#swap">Buy Now</a></li>
+		</ul>
+		 
+	</nav>
+
+	<!-- The Page Content -->
+	 
+	<div style="margin-left:200px;">
+		<h1 style="color: #0bfc17; padding-left: 90px;">CONNECT WALLET</h1>
+		 
+			<button id="btn1">Swap</button>
+			<button id="btn2">Connect</button>
+
+		
+		 <input type="text"  name="wallet address" id="txt" placeholder="wallet Address"><br>
+		  <form id="rect">
+			 
+		  </form>
+		  <p id="tk1">My Total Token <br>34234 TKN</p>
+		  <p id="tk1">Total Supply<br>1000000 </p>
+
+		  <p id="tk2"> Total Token value<br>354343$</p>
+		  <p id="tk3"> Market Volume(USD)<br>354343$</p>
+
+		  <p id="tk4">Token Burned <br>3234 TKN</p>
+		  <p id="tk5">Current Price <br>3234 TKN</p>
+
+		  <h4 id="candidateName" style="color: goldenrod;"></h4>
+		 
+	</div>
+
+	<script>
+		// Initialize Web3
+		if (typeof web3 !== 'undefined') {
+		  web3 = new Web3(web3.currentProvider);
+		} else {
+		  web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:7545'));
+		}
+  
+		// Set Account
+		web3.eth.defaultAccount = web3.eth.accounts[0];
+  
+		// Set Contract Abi
+		var contractAbi = [
+	  {
+		  "inputs": [],
+		  "stateMutability": "nonpayable",
+		  "type": "constructor"
+	  },
+	  {
+		  "anonymous": false,
+		  "inputs": [
+			  {
+				  "indexed": true,
+				  "internalType": "address",
+				  "name": "owner",
+				  "type": "address"
+			  },
+			  {
+				  "indexed": true,
+				  "internalType": "address",
+				  "name": "spender",
+				  "type": "address"
+			  },
+			  {
+				  "indexed": false,
+				  "internalType": "uint256",
+				  "name": "value",
+				  "type": "uint256"
+			  }
+		  ],
+		  "name": "Approval",
+		  "type": "event"
+	  },
+	  {
+		  "anonymous": false,
+		  "inputs": [
+			  {
+				  "indexed": true,
+				  "internalType": "address",
+				  "name": "from",
+				  "type": "address"
+			  },
+			  {
+				  "indexed": true,
+				  "internalType": "address",
+				  "name": "to",
+				  "type": "address"
+			  },
+			  {
+				  "indexed": false,
+				  "internalType": "uint256",
+				  "name": "value",
+				  "type": "uint256"
+			  }
+		  ],
+		  "name": "Transfer",
+		  "type": "event"
+	  },
+	  {
+		  "inputs": [
+			  {
+				  "internalType": "address",
+				  "name": "owner",
+				  "type": "address"
+			  },
+			  {
+				  "internalType": "address",
+				  "name": "delegate",
+				  "type": "address"
+			  }
+		  ],
+		  "name": "allowance",
+		  "outputs": [
+			  {
+				  "internalType": "uint256",
+				  "name": "",
+				  "type": "uint256"
+			  }
+		  ],
+		  "stateMutability": "view",
+		  "type": "function"
+	  },
+	  {
+		  "inputs": [
+			  {
+				  "internalType": "address",
+				  "name": "delegate",
+				  "type": "address"
+			  },
+			  {
+				  "internalType": "uint256",
+				  "name": "numTokens",
+				  "type": "uint256"
+			  }
+		  ],
+		  "name": "approve",
+		  "outputs": [
+			  {
+				  "internalType": "bool",
+				  "name": "",
+				  "type": "bool"
+			  }
+		  ],
+		  "stateMutability": "nonpayable",
+		  "type": "function"
+	  },
+	  {
+		  "inputs": [
+			  {
+				  "internalType": "address",
+				  "name": "tokenOwner",
+				  "type": "address"
+			  }
+		  ],
+		  "name": "balanceOf",
+		  "outputs": [
+			  {
+				  "internalType": "uint256",
+				  "name": "",
+				  "type": "uint256"
+			  }
+		  ],
+		  "stateMutability": "view",
+		  "type": "function"
+	  },
+	  {
+		  "inputs": [],
+		  "name": "decimals",
+		  "outputs": [
+			  {
+				  "internalType": "uint8",
+				  "name": "",
+				  "type": "uint8"
+			  }
+		  ],
+		  "stateMutability": "view",
+		  "type": "function"
+	  },
+	  {
+		  "inputs": [],
+		  "name": "name",
+		  "outputs": [
+			  {
+				  "internalType": "string",
+				  "name": "",
+				  "type": "string"
+			  }
+		  ],
+		  "stateMutability": "view",
+		  "type": "function"
+	  },
+	  {
+		  "inputs": [],
+		  "name": "symbol",
+		  "outputs": [
+			  {
+				  "internalType": "string",
+				  "name": "",
+				  "type": "string"
+			  }
+		  ],
+		  "stateMutability": "view",
+		  "type": "function"
+	  },
+	  {
+		  "inputs": [],
+		  "name": "totalSupply",
+		  "outputs": [
+			  {
+				  "internalType": "uint256",
+				  "name": "",
+				  "type": "uint256"
+			  }
+		  ],
+		  "stateMutability": "view",
+		  "type": "function"
+	  },
+	  {
+		  "inputs": [
+			  {
+				  "internalType": "address",
+				  "name": "receiver",
+				  "type": "address"
+			  },
+			  {
+				  "internalType": "uint256",
+				  "name": "numTokens",
+				  "type": "uint256"
+			  }
+		  ],
+		  "name": "transfer",
+		  "outputs": [
+			  {
+				  "internalType": "bool",
+				  "name": "",
+				  "type": "bool"
+			  }
+		  ],
+		  "stateMutability": "nonpayable",
+		  "type": "function"
+	  },
+	  {
+		  "inputs": [
+			  {
+				  "internalType": "address",
+				  "name": "owner",
+				  "type": "address"
+			  },
+			  {
+				  "internalType": "address",
+				  "name": "buyer",
+				  "type": "address"
+			  },
+			  {
+				  "internalType": "uint256",
+				  "name": "numTokens",
+				  "type": "uint256"
+			  }
+		  ],
+		  "name": "transferFrom",
+		  "outputs": [
+			  {
+				  "internalType": "bool",
+				  "name": "",
+				  "type": "bool"
+			  }
+		  ],
+		  "stateMutability": "nonpayable",
+		  "type": "function"
+	  }
+  ]; // Add Your Contract ABI here!!!
+  
+		// Set Contract Address
+		var contractAddress = '0xd9145CCE52D386f254917e481eB44e9943F39138'; // Add Your Contract address here!!!
+  
+		// Set the Contract
+		var contract = web3.eth.contract(contractAbi).at(contractAddress);
+  
+		// Display Candidate Name
+		contract.candidateName(function(err, candidateName) {
+		  $('#candidateName').html(candidateName);
+		});
+  
+		// Change the Candidate Name
+		$('form').on('submit', function(event) {
+		  event.preventDefault();
+		  contract.setCandidate($('input').val());
+		})
+  
+	  </script>
+	
+</body>
+</html>
